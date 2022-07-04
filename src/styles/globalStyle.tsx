@@ -1,12 +1,16 @@
 import { createGlobalStyle } from 'styled-components'
-import reset from 'styled-reset'
+import { reset as styleReset } from 'styled-reset'
 
 const GlobalStyle = createGlobalStyle`
   // Reset CSS
-  ${reset}
+  ${styleReset}
 
   * {
     box-sizing: border-box;
+  }
+
+  html {
+    font-family: sans-serif;
   }
   
   a {
