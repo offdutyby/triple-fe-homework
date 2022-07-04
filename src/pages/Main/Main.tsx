@@ -1,11 +1,17 @@
 import styled from 'styled-components'
 
-const Container = styled.div``
+import MainTemplate from 'components/Main/Templates/MainTemplate/MainTemplate'
+
+const Container = styled.div`
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+`
 
 const Main = () => {
   return (
     <Container>
-      <h1>Hello World~~!!</h1>
+      <MainTemplate />
     </Container>
   )
 }
