@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import MainTemplate from 'components/Main/Templates/MainTemplate/MainTemplate'
+import MainTemplate from 'components/Templates/MainTemplate/MainTemplate'
 
 const Container = styled.div`
   width: 100%;
