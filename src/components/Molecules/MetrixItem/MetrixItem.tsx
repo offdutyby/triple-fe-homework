@@ -9,6 +9,7 @@ interface Props {
 
 const Container = styled.div`
   display: flex;
+  margin-bottom: 20px;
 `
 
 const MetrixItem = ({ firstText, secondText }: Props) => {

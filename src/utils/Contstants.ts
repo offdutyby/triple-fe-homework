@@ -23,7 +23,7 @@ export const AWARD_ITEM_1 = {
   secondText: '올해의 앱 최우수상 수상',
 }
 export const AWARD_ITEM_2 = {
-  imgUrl: 'assets/badge-apple4x.png',
+  imgUrl: 'assets/images/badge-apple4x.png',
   imgAlt: 'apple-store-badge-image',
   firstText: '2018 애플 앱스토어',
   secondText: '오늘의 여행앱 선정',

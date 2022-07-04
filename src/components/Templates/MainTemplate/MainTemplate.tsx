@@ -1,10 +1,21 @@
 import { FC } from 'react'
 import styled from 'styled-components'
 
+import ContentLogo from 'components/Molecules/ContentLogo/ContentLogo'
+import MetrixItem from 'components/Molecules/MetrixItem/MetrixItem'
+import {
+  AWARD_ITEM_1,
+  AWARD_ITEM_2,
+  METRIX_ITEM_1,
+  METRIX_ITEM_2,
+  METRIX_ITEM_3,
+} from 'utils/Contstants'
+import AwardItem from 'components/Molecules/AwardItem/AwardItem'
+import FadeInBox from 'components/Atoms/FadeInBox/FadeInBox'
+
 const Container = styled.section`
   max-width: 1040px;
   height: 552px;
-  background-color: beige;
   display: flex;
   margin: 0 auto;
 `
@@ -12,10 +23,8 @@ const Container = styled.section`
 const Left = styled.section`
   width: 50%;
   margin-top: 150px;
-  background-color: chocolate;
 `
-const AwordLogoBox = styled.article`
-  background-color: grey;
+const AwardLogoBox = styled.article`
   width: 400px;
   height: 338px;
   background-size: 400px 338px;
@@ -25,7 +34,6 @@ const AwordLogoBox = styled.article`
 const Right = styled.section`
   width: 50%;
   margin-top: 150px;
-  background-color: bisque;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -34,24 +42,58 @@ const Right = styled.section`
 const StaticsMatrixBox = styled.article`
   width: 417px;
   height: 168px;
-  background-color: black;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 `
 const StaticsImageBox = styled.article`
   width: 417px;
   height: 68px;
-  background-color: blueviolet;
+  display: flex;
+  gap: 25px;
 `
 
 const MainTemplate: FC = () => {
   return (
     <Container>
       <Left>
-        <AwordLogoBox />
+        <FadeInBox delay={0}>
+          <AwardLogoBox>
+            <ContentLogo />
+          </AwardLogoBox>
+        </FadeInBox>
       </Left>
       <Right>
-        <StaticsMatrixBox />
-        <StaticsImageBox />
+        <FadeInBox delay={100}>
+          <StaticsMatrixBox>
+            <MetrixItem
+              firstText={METRIX_ITEM_1.firstText}
+              secondText={METRIX_ITEM_1.secondText}
+            />
+            <MetrixItem
+              firstText={METRIX_ITEM_2.firstText}
+              secondText={METRIX_ITEM_2.secondText}
+            />
+            <MetrixItem
+              firstText={METRIX_ITEM_3.firstText}
+              secondText={METRIX_ITEM_3.secondText}
+            />
+          </StaticsMatrixBox>
+        </FadeInBox>
+        <FadeInBox delay={200}>
+          <StaticsImageBox>
+            <AwardItem
+              imgUrl={AWARD_ITEM_1.imgUrl}
+              imgAlt={AWARD_ITEM_1.imgAlt}
+              firstText={AWARD_ITEM_1.firstText}
+              secondText={AWARD_ITEM_1.secondText}
+            />
+            <AwardItem
+              imgUrl={AWARD_ITEM_2.imgUrl}
+              imgAlt={AWARD_ITEM_2.imgAlt}
+              firstText={AWARD_ITEM_2.firstText}
+              secondText={AWARD_ITEM_2.secondText}
+            />
+          </StaticsImageBox>
+        </FadeInBox>
       </Right>
     </Container>
   )
