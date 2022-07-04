@@ -8,7 +8,7 @@ export default {
 } as Meta
 
 function Template() {
-  return <FadeInBox>안녕하세요</FadeInBox>
+  return <FadeInBox delay={100}>안녕하세요</FadeInBox>
 }
 
 export const Default: Story = Template.bind({})
