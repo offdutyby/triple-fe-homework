@@ -3,7 +3,7 @@ import { Story } from '@storybook/react'
 import MainTemplate from './MainTemplate'
 
 export default {
-  title: 'components/Main/Templates/MainTemplate',
+  title: 'components/Templates/MainTemplate',
   component: MainTemplate,
 }
 function Template() {
