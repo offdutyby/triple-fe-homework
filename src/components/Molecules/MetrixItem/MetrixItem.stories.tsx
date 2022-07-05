@@ -25,7 +25,7 @@ function Template({ maxCount, firstText, secondText }: Props) {
 export const Default: Story<Props> = Template.bind({})
 
 Default.args = {
-  maxCount: 350,
+  maxCount: 700,
   firstText: '만 명',
   secondText: '의 여행자',
 }

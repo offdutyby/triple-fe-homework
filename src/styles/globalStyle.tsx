@@ -12,12 +12,7 @@ const GlobalStyle = createGlobalStyle`
   html {
     font-family: sans-serif;
   }
-  
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
-  
+
 `
 
 export default GlobalStyle
