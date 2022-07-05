@@ -1,8 +1,10 @@
 import styled from 'styled-components'
 
 import Text from 'components/Atoms/Text/Text'
+import useCount from 'hooks/useCount'
 
 interface Props {
+  maxCount: number
   firstText: string
   secondText: string
 }
@@ -12,11 +14,12 @@ const Container = styled.div`
   margin-bottom: 20px;
 `
 
-const MetrixItem = ({ firstText, secondText }: Props) => {
+const MetrixItem = ({ maxCount, firstText, secondText }: Props) => {
+  const count = useCount(maxCount)
   return (
     <Container>
       <Text color="default" fontSize="36px" fontWeight="700" lineHeight="36px">
-        350
+        {count}
       </Text>
       <Text color="default" fontSize="36px" fontWeight="700" lineHeight="36px">
         {firstText}
