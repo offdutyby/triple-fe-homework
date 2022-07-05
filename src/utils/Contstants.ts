@@ -5,15 +5,15 @@ export const CONTENT_LOGO = {
 
 export const METRIX_ITEM_1 = {
   firstText: '만 명',
-  secondText: '의 사용자',
+  secondText: '의 여행자',
 }
 export const METRIX_ITEM_2 = {
   firstText: '만 개',
-  secondText: '의 리뷰',
+  secondText: '의 여행 리뷰',
 }
 export const METRIX_ITEM_3 = {
   firstText: '만 개',
-  secondText: '의 저장',
+  secondText: '의 여행 일정',
 }
 
 export const AWARD_ITEM_1 = {
