@@ -6,7 +6,7 @@ interface Props {
   delay: number
 }
 
-const Container = styled.div<{ delay: number }>`
+const Container = styled.div<Props>`
   @keyframes fadeInUp {
     from {
       opacity: 0;
