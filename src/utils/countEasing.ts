@@ -1,5 +1,9 @@
 const countEasing = (rate: number) => {
-  return rate < 0.5 ? 2 * rate * rate : -1 + (4 - 2 * rate) * rate
+  if (rate === 1) {
+    return 1
+  }
+
+  return 1 - Math.pow(2, -10 * rate)
 }
 
 export default countEasing
