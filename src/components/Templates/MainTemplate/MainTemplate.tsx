@@ -1,4 +1,3 @@
-import { FC } from 'react'
 import styled from 'styled-components'
 
 import ContentLogo from 'components/Molecules/ContentLogo/ContentLogo'
@@ -51,7 +50,7 @@ const StaticsImageBox = styled.article`
   gap: 25px;
 `
 
-const MainTemplate: FC = () => {
+const MainTemplate = () => {
   return (
     <Container>
       <Left>
