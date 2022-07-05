@@ -65,14 +65,17 @@ const MainTemplate: FC = () => {
         <FadeInBox delay={100}>
           <StaticsMatrixBox>
             <MetrixItem
+              maxCount={700}
               firstText={METRIX_ITEM_1.firstText}
               secondText={METRIX_ITEM_1.secondText}
             />
             <MetrixItem
+              maxCount={100}
               firstText={METRIX_ITEM_2.firstText}
               secondText={METRIX_ITEM_2.secondText}
             />
             <MetrixItem
+              maxCount={470}
               firstText={METRIX_ITEM_3.firstText}
               secondText={METRIX_ITEM_3.secondText}
             />

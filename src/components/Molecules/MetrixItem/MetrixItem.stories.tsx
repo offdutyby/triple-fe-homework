@@ -5,6 +5,7 @@ import MetrixItem from './MetrixItem'
 interface Props {
   firstText: string
   secondText: string
+  maxCount: number
 }
 
 export default {
@@ -12,12 +13,19 @@ export default {
   component: MetrixItem,
 } as Meta
 
-function Template({ firstText, secondText }: Props) {
-  return <MetrixItem firstText={firstText} secondText={secondText} />
+function Template({ maxCount, firstText, secondText }: Props) {
+  return (
+    <MetrixItem
+      maxCount={maxCount}
+      firstText={firstText}
+      secondText={secondText}
+    />
+  )
 }
 export const Default: Story<Props> = Template.bind({})
 
 Default.args = {
+  maxCount: 350,
   firstText: '만 명',
   secondText: '의 여행자',
 }
