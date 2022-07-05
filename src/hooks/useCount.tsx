@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 
 import countEasing from 'utils/countEasing'
 
-const useCount = (maxCount: number) => {
+const useCount = (maxCount: number): number => {
   const [count, setCount] = useState(0)
 
   useEffect(() => {
